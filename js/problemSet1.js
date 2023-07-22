@@ -6,3 +6,6 @@ if (fruits.length > 0){
     }
     console.log(counter)
 }else console.log("The Array Is Empty!")
+
+
+// -------------------------------------------------------------------------------
