@@ -11,7 +11,7 @@ function checkValue(element) {
 
 function changeText(){
     let result = document.querySelector("p");
-    let color = document.querySelector("#coolor");
+    let color = document.querySelector("#color");
     let text = document.querySelector("#text")
     try {
         result.style.color = color.value
