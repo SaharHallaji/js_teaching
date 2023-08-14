@@ -15,9 +15,8 @@ const add = () => {
     time.value = ""
 }
 const show = () => {
-    while (list.firstChild) {
-        list.removeChild(list.firstChild);
-    }
+    while (list.firstChild) list.removeChild(list.firstChild);
+
     tasks.forEach((value) => {
         const li = document.createElement("li");
         const p = document.createElement("p");
