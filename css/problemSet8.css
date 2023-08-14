@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #121212;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+input {
+    font-size: 16px;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+form > label {
+    margin: 0 10px;
+}
+
+form > button {
+    padding: 15px;
+}
+
+section {
+    background-color: white;
+    border-radius: 14px;
+    padding: 16px;
+    margin-top: 16px;
+    flex-direction: column;
+}
+
+section .task {
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 10px;
+}
+
+section .task:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+section .task button {
+    background-color: red;
+    color: whitesmoke;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
