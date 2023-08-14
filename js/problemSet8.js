@@ -18,7 +18,7 @@ const show = () => {
     while (list.firstChild) {
         list.removeChild(list.firstChild);
     }
-    tasks.forEach((value,index) => {
+    tasks.forEach((value) => {
         const li = document.createElement("li");
         const p = document.createElement("p");
         const span = document.createElement("span");
