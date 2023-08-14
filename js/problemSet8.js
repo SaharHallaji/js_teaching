@@ -17,21 +17,19 @@ const add = () => {
 const show = () => {
     while (list.firstChild) list.removeChild(list.firstChild);
 
-    tasks.forEach((value) => {
+    tasks.forEach((value , index) => {
         const li = document.createElement("li");
         const p = document.createElement("p");
         const span = document.createElement("span");
         p.appendChild(document.createTextNode(`${value.title} - ${value.time}`))
         span.appendChild(document.createTextNode("\u00D7"))
-
+        span.addEventListener("click" , ()=>{
+            tasks.splice(index , 1)
+            show()
+        })
         li.appendChild(p)
         li.appendChild(span)
         list.appendChild(li)
 
     })
 }
-
-/*
-const remove = (event) => {
-
-}*/
