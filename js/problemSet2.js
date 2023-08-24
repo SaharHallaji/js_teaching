@@ -38,7 +38,6 @@ const data = [
 ]
 let price = null;
 const result = document.querySelector("p");
-/*
 function filterData(){
     result.innerHTML = "";
     price = parseInt(document.querySelector('input').value)
@@ -51,18 +50,18 @@ function filterData(){
     }
 }
 
-*/
 
-function filterData(){
-    result.innerHTML = "";
-    price = parseInt(document.querySelector('#price').value)
-    if (data.length !== 0){
-        data.forEach((value)=>{
-            if (value.price <= price) {
-                result.innerHTML += value.id + " " + value.name + value.price + "<br>"
-            }
-        })
-    }else{
-        result.innerHTML = "array is empty!"
-    }
-}
+//
+// function filterData(){
+//     result.innerHTML = "";
+//     price = parseInt(document.querySelector('#price').value)
+//     if (data.length !== 0){
+//         data.forEach((value)=>{
+//             if (value.price <= price) {
+//                 result.innerHTML += value.id + " " + value.name + value.price + "<br>"
+//             }
+//         })
+//     }else{
+//         result.innerHTML = "array is empty!"
+//     }
+// }
