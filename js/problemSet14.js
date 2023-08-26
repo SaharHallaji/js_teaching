@@ -88,6 +88,7 @@ order(0,production)
 
 let is_shop_open = true
 
+/*
 let order2 = (time , work)=>{
     return new Promise((resolve , reject)=>{
         if (is_shop_open){
@@ -114,23 +115,46 @@ order2(2000 , ()=> console.log(`${stocks.fruits[0]} was selected!`))
 
 
 
+*/
 
 
 
+/*
+let order3 = ()=>{
+    return new Promise((resolve,reject)=>{
+        if (is_shop_open){
+            resolve()
+        }else {
+            reject()
+        }
+    })
+}
+
+*/
+
+
+let toppings_choice = ()=>{
+    return new Promise((resolve, reject) =>{
+        setTimeout(()=>{
+            resolve(()=> console.log("which topping would you love?"))
+        },3000)
+    })
+}
+
+async function kitchen (){
+    console.log("a")
+    console.log("b")
+    console.log("c")
+    await toppings_choice()
+    console.log("d")
+    console.log("e")
+}
+
+kitchen()
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+console.log("something")
 
 
 
